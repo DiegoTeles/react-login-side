@@ -1,0 +1,70 @@
+@font-face{
+    font-family: Avenir;
+    src: url('../Assets/fonts/AvenirLTStd-Book.otf');
+}
+
+@media only screen and (max-width: 720px) {
+    .left {
+        display: none !important;
+    }
+    .right {
+        width: 100vh !important;
+        display: flex !important;
+        background: #1e2533 !important;
+    }
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir;
+}
+
+.login {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+}
+
+.align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 65%;
+    display: flex;
+}
+
+.right {
+    width: 35%;
+    display: flex;
+    background: #1e2533;
+    box-shadow: 0 0 20px -4px rgba(0,0,0,0.75);
+}
+
+.right-content {
+    flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	text-align: center;
+    font-size: 1.5em;
+}
+
+.right .right-content{
+    flex: 0;
+    padding: 10px;
+}
+
+span {
+    font-size: 10px;
+    text-align: right !important;
+    margin: 4px 12px;
+    cursor: pointer;
+}
+
+.form {
+    display: inline-grid;
+    margin: 10px;
+}
